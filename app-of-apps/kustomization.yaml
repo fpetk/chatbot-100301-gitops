@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  rhtap/gitops: chatbot-100301
+  janus-idp.io/tekton: chatbot-100301
+  backstage.io/kubernetes-id: chatbot-100301
+  backstage.io/kubernetes-namespace: ai-software-templates-dev
+  app.kubernetes.io/part-of: chatbot-100301
+resources:
+  - application-dev.yaml
